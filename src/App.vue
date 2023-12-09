@@ -30,7 +30,7 @@
     </v-navigation-drawer>
     <v-app-bar color="green" dark app clipped-left>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>現在地からホテルと飲食店検索!</v-toolbar-title>
+      <v-toolbar-title>現在地からホテルと飲食店検索</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn text @click="currentComponent = 'SearchResults'; $vuetify.goTo(0)">検索</v-btn>
       <v-toolbar-items>
