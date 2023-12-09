@@ -95,6 +95,8 @@
         this.longitude = position.coords.longitude;
         // this.latitude = "35.645736";
         // this.longitude = "139.74757499999998";
+        console.log("緯度：" + this.latitude);
+        console.log("経度：" + this.longitude);
         this.searchHotel();
         this.searchRestaurant();
       },
@@ -102,6 +104,7 @@
         alert("現在地が取得できませんでした");
       },
       searchHotel() {
+        console.log("searchHotel-tuka");
         axios
           .get("/api/hotel-data", {
             params: {
@@ -119,6 +122,7 @@
           });
       },
       searchRestaurant() {
+        console.log("searchrestaurant-tuka");
         axios
           .get("/api/restaurant-data", {
             params: {
