@@ -20,6 +20,7 @@ app.get("/api/restaurant-data", async (req, res) => {
       start: req.query.start,
       format: "json",
     };
+    console.log("restaurant-qpi-tuka");
     const response = await axios.get(apiEndpoint, { params });
     res.json(response.data);
   } catch (error) {
@@ -42,6 +43,7 @@ app.get("/api/hotel-data", async (req, res) => {
       format: "json",
     };
     const response = await axios.get(apiEndpoint, { params });
+    console.log("hotel-qpi-tuka");
     res.json(response.data);
   } catch (error) {
     console.error("Error while fetching HotPepper API:", error.message);
