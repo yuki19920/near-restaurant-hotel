@@ -7,6 +7,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 app.get("/api/restaurant-data", async (req, res) => {
+  console.log("api-restaurant-data-tuka");
   try {
     const apiEndpoint =
       "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/";
@@ -30,6 +31,7 @@ app.get("/api/restaurant-data", async (req, res) => {
 });
 
 app.get("/api/hotel-data", async (req, res) => {
+  console.log("api-hotel-data-tuka");
   try {
     const apiEndpoint =
       "https://app.rakuten.co.jp/services/api/Travel/VacantHotelSearch/20170426";
