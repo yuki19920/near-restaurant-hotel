@@ -8,7 +8,9 @@
     "lint": "vue-cli-service lint",
     "express": "vue-cli-service express:watch",
     "express:run": "vue-cli-service express:run",
-    "start": "concurrently \"npm run serve\" \"node srv/index.js\""
+    "start": "concurrently \"npm run serve\" \"node functions/index.js\"",
+    "dev": "netlify-lambda serve resources/api",
+    "lmd:build": "netlify-lambda build resources/api"
   },
   "dependencies": {
     "axios": "^1.6.2",
@@ -16,6 +18,9 @@
     "core-js": "^3.8.3",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "got": "^14.0.0",
+    "netlify-lambda": "^2.0.16",
+    "node-fetch": "^3.3.2",
     "vue": "^2.6.14",
     "vuetify": "^2.6.0"
   },
@@ -29,6 +34,8 @@
     "eslint-plugin-vue": "^8.0.3",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
+    "terser": "^5.26.0",
+    "terser-webpack-plugin": "^5.3.9",
     "vue-cli-plugin-vuetify": "~2.5.8",
     "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"

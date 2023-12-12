@@ -18,6 +18,9 @@ module.exports = defineConfig({
     },
   },
 
+  // outputDir: 'public', // ビルド先ディレクトリを指定
+  // publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
+
   pluginOptions: {
     express: {
       shouldServeApp: true,
